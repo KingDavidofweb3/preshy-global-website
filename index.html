@@ -1,48 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Preshy Global Business</title>
-  < meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body { font-family: Arial; margin: 0; }
-    header { background: #0a3d62; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; }
-    footer { background: #0a3d62; color: white; padding: 20px; text-align: center; }
-    a { color: #0a3d62; font-weight: bold; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-style: italic;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0a3d62;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .contact a {
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #0a3d62;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Preshy Global Business</h1>
   <p>Abuja, Nigeria</p>
+  <p><strong>Your glue, our pride.</strong></p>
 </header>
 
 <section>
   <h2>About Us</h2>
-  <p>Preshy Global Business is a trusted business based in Abuja, Nigeria, committed to delivering quality products and services to our customers.</p>
+  <p>
+    Preshy Global Business is a beauty-focused business based in Abuja, Nigeria.
+    We specialize in press-on nails and high-quality press-on glue designed
+    to give you confidence, comfort, and long-lasting beauty.
+  </p>
+
+  <p>
+    Our press-on glue is carefully selected to ensure strong hold, easy use,
+    and nail safety — because <strong>your glue is our pride</strong>.
+  </p>
 </section>
 
 <section>
   <h2>Our Gallery</h2>
   <div class="gallery">
-    <img src="img1.jpg">
-    <img src="img2.jpg">
-    <img src="img3.jpg">
-    <img src="img4.jpg">
-    <img src="img5.jpg">
-    <img src="img6.jpg">
-    <img src="img7.jpg">
+    <img src="img1.jpg" alt="Preshy Nails 1">
+    <img src="img2.jpg" alt="Preshy Nails 2">
+    <img src="img3.jpg" alt="Preshy Nails 3">
+    <img src="img4.jpg" alt="Preshy Nails 4">
+    <img src="img5.jpg" alt="Preshy Nails 5">
+    <img src="img6.jpg" alt="Preshy Nails 6">
+    <img src="img7.jpg" alt="Preshy Nails 7">
   </div>
 </section>
 
-<section>
+<section class="contact">
   <h2>Contact Us</h2>
-  <p>
-    📞 <a href="https://wa.me/234XXXXXXXXXX">Chat on WhatsApp</a><br><br>
-    📷 <a href="https://instagram.com/yourpage">Visit Instagram</a>
-  </p>
+
+  <a href="https://wa.me/2349027927212" target="_blank">
+    📞 Chat with us on WhatsApp
+  </a>
+
+  <a href="https://www.instagram.com/preshy_nails1" target="_blank">
+    📷 Follow us on Instagram
+  </a>
 </section>
 
 <footer>
