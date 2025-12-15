@@ -2,122 +2,165 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Preshy Beauty Global</title>
+<title>Preshy Beauty Global | Luxury Beauty & Perfume Experience</title>
+
+<meta name="description" content="Preshy Beauty Global is a luxury beauty and perfume brand offering premium nail services and exclusive fragrance collections in Abuja, Nigeria.">
+<meta name="keywords" content="Luxury Nails Abuja, Perfumes Nigeria, Nail Extensions, Arabic Perfumes, Preshy Beauty Global">
+<meta name="author" content="Preshy Beauty Global">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#fff;
-  color:#2b1b17;
+:root{
+  --black:#000;
+  --gold:#c9a24d;
+  --pink:#f6c1cc;
+  --white:#fff;
+  --brown:#4b2e2b;
 }
 
+body{
+  margin:0;
+  font-family:Segoe UI, sans-serif;
+  background:var(--white);
+  color:var(--brown);
+  scroll-behavior:smooth;
+}
+
+a{text-decoration:none}
+
 header{
-  background:#000;
-  color:#c9a24d;
-  padding:20px;
+  background:linear-gradient(to right, var(--black), var(--brown));
+  color:var(--white);
+  padding:80px 20px;
   text-align:center;
 }
 
-nav a{
-  margin:0 15px;
-  color:#f4b6c2;
-  text-decoration:none;
+header h1{
+  color:var(--gold);
+  font-size:2.8em;
+}
+
+header p{
+  color:var(--pink);
+  font-style:italic;
+}
+
+.btn{
+  display:inline-block;
+  margin:20px 10px;
+  padding:12px 30px;
+  background:var(--gold);
+  color:var(--black);
+  border-radius:30px;
   font-weight:bold;
 }
 
 section{
   padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px)}
+  to{opacity:1; transform:translateY(0)}
+}
+
+h2{
   text-align:center;
-}
-
-.hero{
-  background:linear-gradient(135deg,#000,#3b241f);
-  color:white;
-}
-
-.hero h1{
-  color:#c9a24d;
-  font-size:2.5em;
-}
-
-.hero p{
-  color:#f4b6c2;
-  max-width:700px;
-  margin:20px auto;
+  color:var(--black);
+  margin-bottom:30px;
 }
 
 .slider{
-  width:300px;
-  height:400px;
+  max-width:500px;
   margin:30px auto;
-  position:relative;
-  border-radius:20px;
   overflow:hidden;
+  border-radius:15px;
 }
 
-.slider img{
-  position:absolute;
+.slides{
+  display:flex;
+  transition:.6s;
+}
+
+.slides img{
   width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:0;
-  transition:opacity 1.5s ease;
 }
 
-.slider img.active{
-  opacity:1;
+.service-list{
+  max-width:500px;
+  margin:auto;
+  text-align:left;
 }
 
-.btn{
+.book{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 30px;
+  background:var(--black);
+  color:var(--gold);
+  border-radius:30px;
+}
+
+.testimonials{
+  background:var(--pink);
+}
+
+.testimonial{
+  background:var(--white);
+  padding:25px;
+  margin:20px auto;
+  max-width:700px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+  font-style:italic;
+}
+
+form{
+  max-width:500px;
+  margin:auto;
+  text-align:left;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  background:var(--gold);
+  border:none;
+  font-weight:bold;
+  border-radius:30px;
+}
+
+.contact{
+  background:var(--black);
+  color:var(--white);
+  text-align:center;
+}
+
+.contact a{
   display:inline-block;
   margin:10px;
-  padding:12px 30px;
-  background:#c9a24d;
-  color:#000;
+  padding:12px 25px;
+  background:var(--gold);
+  color:var(--black);
   border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
 }
 
-.services{
-  background:#fff;
-}
-
-.card{
-  background:#fff;
-  max-width:500px;
-  margin:20px auto;
-  padding:30px;
-  border-radius:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.1);
-}
-
-.tiktok{
-  background:#fdf6f8;
-}
-
-.cta{
-  background:#000;
+footer{
+  background:var(--brown);
   color:white;
-}
-
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:28px;
-  text-decoration:none;
-  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+  text-align:center;
+  padding:15px;
 }
 </style>
 </head>
@@ -125,87 +168,108 @@ section{
 <body>
 
 <header>
-  <h2>Preshy Beauty Global</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="nails.html">Nails</a>
-    <a href="perfume.html">Perfume</a>
-  </nav>
+<h1>Preshy Beauty Global</h1>
+<p>High-End Nail Technician & Perfume Branding</p>
+<p><strong>Where beauty meets scent — confidence perfected.</strong></p>
+<a class="btn" href="#nails">Beauty & Nails</a>
+<a class="btn" href="#perfume">Perfumes</a>
 </header>
 
-<section class="hero">
-  <h1>Luxury Self-Care Experience</h1>
-  <p>Where beauty meets scent and confidence is perfected.</p>
+<section>
+<h2>About Preshy Beauty Global</h2>
+<p style="text-align:center; max-width:800px; margin:auto">
+Preshy Beauty Global is not just a salon or perfume store — it is a **luxurious self-care experience**.
+Every service and fragrance is designed to elevate confidence, elegance, and personal presence.
+<br><br>
+<strong>Precious Glow</strong> is our philosophy — refined beauty with lasting impact.
+</p>
+</section>
 
-  <div class="slider">
-    <img src="img1.jpg" class="active">
+<section id="nails">
+<h2>Beauty & Nail Services</h2>
+
+<div class="slider">
+  <div class="slides" id="nailSlides">
+    <img src="img1.jpg">
     <img src="img2.jpg">
+    <img src="img3.jpg">
+  </div>
+</div>
+
+<ul class="service-list">
+<li>• Nail Extensions</li>
+<li>• Acrylic Nails</li>
+<li>• Gel Nails</li>
+<li>• Basic Pedicure & Foot Care</li>
+<li>• Nail Art & Custom Designs</li>
+</ul>
+
+<div style="text-align:center">
+<a class="book" href="https://wa.me/2349027927212?text=Hello%20Preshy%20Beauty%20Global,%20I%20would%20love%20to%20book%20a%20nail%20service." target="_blank">
+Book Nail Service
+</a>
+</div>
+</section>
+
+<section id="perfume">
+<h2>Perfume Collection</h2>
+
+<div class="slider">
+  <div class="slides" id="perfumeSlides">
     <img src="img4.jpg">
+    <img src="img5.jpg">
+    <img src="img6.jpg">
   </div>
+</div>
 
-  <a href="nails.html" class="btn">Explore Nail Services</a>
-  <a href="perfume.html" class="btn">Explore Perfumes</a>
+<ul class="service-list">
+<li>• Arabic Perfumes</li>
+<li>• Wood & Wood-Blend Scents</li>
+<li>• Oil Perfumes</li>
+<li>• Roll-Ons</li>
+<li>• Body Sprays</li>
+<li>• Special & Limited Collections</li>
+</ul>
+
+<div style="text-align:center">
+<a class="book" href="https://wa.me/2349027927212?text=Hello%20Preshy%20Beauty%20Global,%20I%20am%20interested%20in%20your%20perfume%20collection." target="_blank">
+Explore Perfumes
+</a>
+</div>
 </section>
 
-<section class="services">
-  <h2>What We Do</h2>
-
-  <div class="card">
-    <h3>Nail Beauty</h3>
-    <p>
-      Elegant nail extensions, flawless acrylics, gel nails,
-      custom nail art, pedicure and foot care — designed to
-      make your hands speak luxury.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Perfume Branding</h3>
-    <p>
-      Premium Arabic perfumes, oud blends, oil perfumes,
-      roll-ons and exclusive scent collections that define
-      presence and confidence.
-    </p>
-  </div>
+<section class="testimonials">
+<h2>Client Experiences</h2>
+<div class="testimonial">“Pure luxury. Every service feels intentional and premium.”</div>
+<div class="testimonial">“The perfumes are unique and long-lasting.”</div>
+<div class="testimonial">“Confidence booster. Preshy Beauty Global understands beauty.”</div>
 </section>
 
-<section class="tiktok">
-  <h2>Our Glow in Motion</h2>
-
-  <blockquote class="tiktok-embed"
-    cite="https://www.tiktok.com/@preshybeauty25/photo/7549293174720613640"
-    data-video-id="7549293174720613640"
-    style="max-width:325px;min-width:325px;">
-  </blockquote>
-
-  <a href="https://www.tiktok.com/@preshybeauty25" class="btn" target="_blank">
-    Follow on TikTok
-  </a>
+<section>
+<h2>Book an Appointment</h2>
+<form action="mailto:preshybeautyglobal@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="What service are you booking?"></textarea>
+<button type="submit">Send Booking Request</button>
+</form>
 </section>
 
-<section class="cta">
-  <h2>Book Your Experience</h2>
-
-  <a href="https://wa.me/2349027927212?text=Hello%20Preshy%20Beauty%20Global,%20I%20would%20love%20to%20book%20your%20services."
-     class="btn" target="_blank">Book via WhatsApp</a>
-
-  <a href="https://www.instagram.com/preshy_nails1" class="btn" target="_blank">
-    View Instagram
-  </a>
+<section class="contact">
+<h2>Connect With Us</h2>
+<a href="https://wa.me/2349027927212" target="_blank">WhatsApp</a>
+<a href="https://www.instagram.com/preshy_nails1" target="_blank">Instagram</a>
+<a href="https://www.facebook.com/people/Presh-beauty-world/100054715122036/" target="_blank">Facebook</a>
 </section>
 
-<a href="https://wa.me/2349027927212?text=Hello%20Preshy%20Beauty%20Global,%20I%20would%20love%20to%20book%20your%20services."
-   class="whatsapp-float" target="_blank">💬</a>
+<footer>
+© 2025 Preshy Beauty Global · Luxury Beauty & Perfume Experience
+</footer>
 
-<script async src="https://www.tiktok.com/embed.js"></script>
 <script>
-const slides=document.querySelectorAll('.slider img');
-let i=0;
-setInterval(()=>{
-  slides[i].classList.remove('active');
-  i=(i+1)%slides.length;
-  slides[i].classList.add('active');
-},4000);
+let i=0,j=0;
+setInterval(()=>{i=(i+1)%3;document.getElementById("nailSlides").style.transform=`translateX(-${i*100}%)`},3000);
+setInterval(()=>{j=(j+1)%3;document.getElementById("perfumeSlides").style.transform=`translateX(-${j*100}%)`},3500);
 </script>
 
 </body>
