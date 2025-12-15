@@ -2,143 +2,268 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Preshy Global Business</title>
+<title>PreciGlobal | Luxury Beauty & Perfume Experience</title>
+
+<meta name="description" content="PreciGlobal is a luxury beauty and perfume brand offering premium nail services and exclusive fragrance collections in Abuja, Nigeria.">
+<meta name="keywords" content="Luxury Nails Abuja, Perfumes Nigeria, Nail Extensions, Arabic Perfumes, PreciGlobal">
+<meta name="author" content="PreciGlobal">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-  /* General */
-  body { margin:0; font-family: 'Arial', sans-serif; background:#fff; color:#333; }
-  a { text-decoration:none; color:inherit; }
+:root{
+  --black:#000;
+  --gold:#c9a24d;
+  --pink:#f6c1cc;
+  --white:#fff;
+  --brown:#4b2e2b;
+}
 
-  /* Header / Hero */
-  header { background:#f8c8dc; color:#333; text-align:center; padding:50px 20px; }
-  header h1 { margin:0; font-size:2.5em; }
-  header p { margin:10px 0; font-style:italic; font-size:1.2em; }
-  .hero-buttons { margin-top:20px; }
-  .hero-buttons a { background:#0a3d62; color:white; padding:12px 25px; margin:0 10px; border-radius:5px; font-weight:bold; display:inline-block; transition:0.3s; }
-  .hero-buttons a:hover { background:#ff69b4; }
+body{
+  margin:0;
+  font-family:Segoe UI, sans-serif;
+  background:var(--white);
+  color:var(--brown);
+  scroll-behavior:smooth;
+}
 
-  /* Sections */
-  section { padding:50px 20px; max-width:1000px; margin:auto; }
-  h2 { color:#0a3d62; font-size:2em; margin-bottom:20px; text-align:center; }
+a{text-decoration:none}
 
-  /* Slider */
-  .slider { position: relative; max-width: 600px; margin:20px auto; border-radius:10px; overflow:hidden; }
-  .slides { display:flex; transition:0.5s ease; }
-  .slides img { width:100%; border-radius:10px; }
-  .prev, .next { position:absolute; top:50%; transform:translateY(-50%); background:#0a3d62; color:white; padding:10px; border:none; border-radius:50%; cursor:pointer; transition:0.3s; }
-  .prev:hover, .next:hover { background:#ff69b4; }
-  .prev { left:10px; }
-  .next { right:10px; }
+header{
+  background:linear-gradient(to right, var(--black), var(--brown));
+  color:var(--white);
+  padding:80px 20px;
+  text-align:center;
+}
 
-  /* Service Text */
-  .service-text { text-align:center; padding:20px; }
-  .service-text p { font-size:1.1em; line-height:1.5; margin-bottom:20px; }
-  .service-text a { background:#0a3d62; color:white; padding:10px 20px; border-radius:5px; font-weight:bold; transition:0.3s; display:inline-block; }
-  .service-text a:hover { background:#ff69b4; }
+header h1{
+  color:var(--gold);
+  font-size:2.8em;
+}
 
-  /* Testimonials */
-  .testimonials { background:#fef0f5; padding:50px 20px; text-align:center; }
-  .testimonial { margin:20px auto; max-width:600px; background:white; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1); font-style:italic; }
+header p{
+  color:var(--pink);
+  font-style:italic;
+}
 
-  /* Contact Section */
-  .contact { background:#f0f0f0; text-align:center; padding:40px 20px; }
-  .contact a { display:inline-block; margin:10px 15px; padding:12px 25px; background:#0a3d62; color:white; border-radius:5px; font-weight:bold; transition:0.3s; }
-  .contact a:hover { background:#ff69b4; }
+.btn{
+  display:inline-block;
+  margin:20px 10px;
+  padding:12px 30px;
+  background:var(--gold);
+  color:var(--black);
+  border-radius:30px;
+  font-weight:bold;
+}
 
-  /* Footer */
-  footer { background:#0a3d62; color:white; text-align:center; padding:20px; margin-top:50px; }
+section{
+  padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+  animation:fadeUp 1s ease;
+}
 
-  /* Responsive */
-  @media (max-width:768px) {
-    .hero-buttons a { margin:10px 5px; }
-  }
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px)}
+  to{opacity:1; transform:translateY(0)}
+}
+
+h2{
+  text-align:center;
+  color:var(--black);
+  margin-bottom:30px;
+}
+
+.slider{
+  max-width:500px;
+  margin:30px auto;
+  overflow:hidden;
+  border-radius:15px;
+}
+
+.slides{
+  display:flex;
+  transition:.6s;
+}
+
+.slides img{
+  width:100%;
+}
+
+.service-list{
+  max-width:500px;
+  margin:auto;
+  text-align:left;
+}
+
+.book{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 30px;
+  background:var(--black);
+  color:var(--gold);
+  border-radius:30px;
+}
+
+.testimonials{
+  background:var(--pink);
+}
+
+.testimonial{
+  background:var(--white);
+  padding:25px;
+  margin:20px auto;
+  max-width:700px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+  font-style:italic;
+}
+
+form{
+  max-width:500px;
+  margin:auto;
+  text-align:left;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  background:var(--gold);
+  border:none;
+  font-weight:bold;
+  border-radius:30px;
+}
+
+.contact{
+  background:var(--black);
+  color:var(--white);
+  text-align:center;
+}
+
+.contact a{
+  display:inline-block;
+  margin:10px;
+  padding:12px 25px;
+  background:var(--gold);
+  color:var(--black);
+  border-radius:30px;
+}
+
+footer{
+  background:var(--brown);
+  color:white;
+  text-align:center;
+  padding:15px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Preshy Global Business</h1>
-  <p>Your glow, our pride.</p>
-  <div class="hero-buttons">
-    <a href="#beauty-nails">Beauty Nails</a>
-    <a href="#perfumes">Perfumes</a>
-  </div>
+<h1>PreciGlobal</h1>
+<p>High-End Nail Technician & Perfume Branding</p>
+<p><strong>Where beauty meets scent — confidence perfected.</strong></p>
+<a class="btn" href="#nails">Beauty & Nails</a>
+<a class="btn" href="#perfume">Perfumes</a>
 </header>
 
-<!-- Beauty Nails Section -->
-<section id="beauty-nails">
-  <h2>Beauty Nails</h2>
-  <div class="slider" id="nails-slider">
-    <button class="prev" onclick="prevSlide('nails')">&#10094;</button>
-    <div class="slides">
-      <img src="img1.jpg" alt="Nail 1">
-      <img src="img2.jpg" alt="Nail 2">
-      <img src="img3.jpg" alt="Nail 3">
-    </div>
-    <button class="next" onclick="nextSlide('nails')">&#10095;</button>
-  </div>
-  <div class="service-text">
-    <p>Our Beauty Nails are superb, fresh, and professionally done to give you an elegant, world-class experience. Step into confidence with every nail!</p>
-    <a href="https://wa.me/2349027927212?text=Hello%20Preshy%20Global%20Business,%20I%20am%20interested%20in%20your%20Beauty%20Nails%20service.%20Please%20guide%20me%20on%20how%20to%20book." target="_blank">Book Us Now</a>
-  </div>
+<section>
+<h2>About PreciGlobal</h2>
+<p style="text-align:center; max-width:800px; margin:auto">
+PreciGlobal is a luxurious self-care experience designed for women who value elegance, confidence, and distinction.  
+<strong>Precious Glow</strong> is our identity — refined beauty with lasting impact.
+</p>
 </section>
 
-<!-- Perfumes Section -->
-<section id="perfumes">
-  <h2>Perfumes</h2>
-  <div class="slider" id="perfumes-slider">
-    <button class="prev" onclick="prevSlide('perfumes')">&#10094;</button>
-    <div class="slides">
-      <img src="img4.jpg" alt="Perfume 1">
-      <img src="img5.jpg" alt="Perfume 2">
-      <img src="img6.jpg" alt="Perfume 3">
-    </div>
-    <button class="next" onclick="nextSlide('perfumes')">&#10095;</button>
+<section id="nails">
+<h2>Beauty & Nail Services</h2>
+
+<div class="slider">
+  <div class="slides" id="nailSlides">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
   </div>
-  <div class="service-text">
-    <p>Experience our luxurious Perfumes collection. Each scent is curated to give a lasting impression, blending elegance and sophistication for every occasion.</p>
-    <a href="https://wa.me/2349027927212?text=Hello%20Preshy%20Global%20Business,%20I%20am%20interested%20in%20your%20Perfume%20services.%20Please%20guide%20me%20on%20how%20to%20book." target="_blank">Book Us Now</a>
-  </div>
+</div>
+
+<ul class="service-list">
+<li>• Nail Extensions</li>
+<li>• Acrylic Nails</li>
+<li>• Gel Nails</li>
+<li>• Basic Pedicure & Foot Care</li>
+<li>• Nail Art & Custom Designs</li>
+</ul>
+
+<div style="text-align:center">
+<a class="book" href="https://wa.me/2349027927212?text=Hello%20PreciGlobal,%20I%20would%20love%20to%20book%20a%20nail%20service." target="_blank">Book Nail Service</a>
+</div>
 </section>
 
-<!-- Testimonials Section -->
+<section id="perfume">
+<h2>Perfume Collection</h2>
+
+<div class="slider">
+  <div class="slides" id="perfumeSlides">
+    <img src="img4.jpg">
+    <img src="img5.jpg">
+    <img src="img6.jpg">
+  </div>
+</div>
+
+<ul class="service-list">
+<li>• Arabic Perfumes</li>
+<li>• Wood & Wood-Blend Scents</li>
+<li>• Oil Perfumes</li>
+<li>• Roll-Ons</li>
+<li>• Body Sprays</li>
+<li>• Special & Limited Collections</li>
+</ul>
+
+<div style="text-align:center">
+<a class="book" href="https://wa.me/2349027927212?text=Hello%20PreciGlobal,%20I%20am%20interested%20in%20your%20perfumes." target="_blank">Explore Perfumes</a>
+</div>
+</section>
+
 <section class="testimonials">
-  <h2>What Our Customers Say</h2>
-  <div class="testimonial">"Absolutely love it! The nails are perfect and look so elegant."</div>
-  <div class="testimonial">"The perfume selection is exquisite! I get compliments everywhere I go."</div>
-  <div class="testimonial">"Professional, classy, and a global touch — highly recommend Preshy Global Business."</div>
+<h2>Client Experiences</h2>
+<div class="testimonial">“Pure luxury. Every service feels intentional and premium.”</div>
+<div class="testimonial">“The perfumes are unique and long-lasting.”</div>
+<div class="testimonial">“Confidence booster. PreciGlobal understands beauty.”</div>
 </section>
 
-<!-- Contact Section -->
+<section>
+<h2>Book an Appointment</h2>
+<form action="mailto:preciglobal@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="What service are you booking?"></textarea>
+<button type="submit">Send Booking Request</button>
+</form>
+</section>
+
 <section class="contact">
-  <h2>Contact Us</h2>
-  <a href="https://wa.me/2349027927212?text=Hello%20Preshy%20Global%20Business,%20I%20am%20interested%20in%20your%20services.%20Please%20guide%20me." target="_blank">WhatsApp Us</a>
-  <a href="https://www.instagram.com/preshy_nails1" target="_blank">Instagram</a>
+<h2>Connect With Us</h2>
+<a href="https://wa.me/2349027927212" target="_blank">WhatsApp</a>
+<a href="https://www.instagram.com/preshy_nails1" target="_blank">Instagram</a>
+<a href="https://www.facebook.com/people/Presh-beauty-world/100054715122036/" target="_blank">Facebook</a>
 </section>
 
 <footer>
-  <p>© 2025 Preshy Global Business</p>
+© 2025 PreciGlobal · Luxury Beauty & Perfume Experience
 </footer>
 
 <script>
-  const sliders = {
-    nails: 0,
-    perfumes: 0
-  };
-
-  function nextSlide(section){
-    const slider = document.getElementById(section+'-slider').querySelector('.slides');
-    const slides = slider.children.length;
-    sliders[section] = (sliders[section]+1) % slides;
-    slider.style.transform = 'translateX(-'+sliders[section]*100+'%)';
-  }
-
-  function prevSlide(section){
-    const slider = document.getElementById(section+'-slider').querySelector('.slides');
-    const slides = slider.children.length;
-    sliders[section] = (sliders[section]-1 + slides) % slides;
-    slider.style.transform = 'translateX(-'+sliders[section]*100+'%)';
-  }
+let i=0,j=0;
+setInterval(()=>{i=(i+1)%3;document.getElementById("nailSlides").style.transform=`translateX(-${i*100}%)`},3000);
+setInterval(()=>{j=(j+1)%3;document.getElementById("perfumeSlides").style.transform=`translateX(-${j*100}%)`},3500);
 </script>
 
 </body>
